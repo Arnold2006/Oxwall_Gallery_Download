@@ -1,0 +1,23 @@
+<div class="ow_stdmargin">
+    {if !$showPhotos}
+        <h3>Photo Galleries</h3>
+        {if $albums}
+            <ul class="ow_regular">
+                {foreach from=$albums item=album}
+                    <li>
+                        <a href="?albumId={$album->id}">{$album->name}</a>
+                        (Owner ID: {$album->userId})
+                        Created: {$album->createDatetime}
+                    </li>
+                {/foreach}
+            </ul>
+        {else}
+            <p>No photo galleries found.</p>
+        {/if}
+    {else}
+        <h3>Album Download</h3>
+        <p>This album contains {$photoCount} photos.</p>
+        <a href="?albumId={$albumId}&download=1" class="ow_button">Download All Photos</a>
+        <p><a href="?">Back to Albums</a></p>
+    {/if}
+</div>
