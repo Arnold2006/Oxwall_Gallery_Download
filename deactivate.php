@@ -1,2 +1,2 @@
 <?php
-OW::getNavigation()->deleteMenuItem('albumdownload', 'top_menu_item');
+OW::getNavigation()->deleteMenuItem('albumdownload', 'menu_item');
