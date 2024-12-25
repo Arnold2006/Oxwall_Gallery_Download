@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin>
-	<name>Simple Test Plugin</name>
-	<key>simpletest</key>
-	<description>A simple test plugin that shows It Works!</description>
+    <name>Album Download</name>
+    <key>albumdownload</key>
+    <description>A plugin that allows users to download all images in a gallery.</description>
     <author>Ole Rasmussen</author>
     <authorEmail>ole@tera-sat.com</authorEmail>
-	<authorUrl>https://www.tera-sat.com</authorUrl>
-	<developerKey>169d51276f5c3f3001daa4047f50ee2b</developerKey>
+    <authorUrl>https://www.tera-sat.com</authorUrl>
+    <developerKey>169d51276f5c3f3001daa4047f50ee2b</developerKey>
     <build>1</build>
     <copyright>(C) 2024 Ole Rasmussen. All rights reserved.</copyright>
-	<license>The BSD License</license>
+    <license>The BSD License</license>
     <licenseUrl>http://www.opensource.org/licenses/bsd-license.php</licenseUrl>
 </plugin>
