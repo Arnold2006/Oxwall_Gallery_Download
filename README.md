@@ -1,4 +1,4 @@
-# Oxwall_Gallery_Download
+# Oxwall Album Download
 Oxwall plugin that allows the user to download all images in an gallery
 
 
