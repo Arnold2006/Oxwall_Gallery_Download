@@ -1,3 +1,10 @@
 <?php
 
-OW::getRouter()->addRoute(new OW_Route('albumdownload.index', 'albumdownload', 'ALBUMDOWNLOAD_CTRL_Index', 'index'));
+$navigation = OW::getNavigation();
+$navigation->addMenuItem(
+    OW_Navigation::MAIN,
+    'albumdownload.index',
+    'albumdownload',
+    'ALBUMDOWNLOAD',
+    OW_Navigation::VISIBLE_FOR_ALL
+);
