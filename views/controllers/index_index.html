@@ -1,3 +1,23 @@
+<style>
+    .download-button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 1.2em;
+        color: white;
+        background-color: lightblue;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    .download-button:hover {
+        background-color: deepskyblue;
+        color: white; /* Ensures the text color remains white on hover */
+        text-decoration: none; /* Removes the underline on hover */
+    }
+</style>
+
 <div class="ow_stdmargin">
     {if !$showPhotos}
         <h3>Photo Galleries</h3>
@@ -17,7 +37,8 @@
     {else}
         <h3>Album Download</h3>
         <p>This album contains {$photoCount} photos.</p>
-        <a href="?albumId={$albumId}&download=1" class="ow_button">Download All Photos</a>
+        <a href="?albumId={$albumId}&download=1" class="download-button">Download</a>
+        <br><br>
         <p><a href="?">Back to Albums</a></p>
     {/if}
 </div>
