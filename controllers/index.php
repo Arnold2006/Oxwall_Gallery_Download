@@ -1,11 +1,11 @@
 <?php
 
-class SIMPLETEST_CTRL_Index extends OW_ActionController
+class ALBUMDOWNLOAD_CTRL_Index extends OW_ActionController
 {
     public function index()
     {
-        $this->setPageHeading('Simple Test Plugin');
-        $this->setPageTitle('Simple Test Plugin');
+        $this->setPageHeading('Album Download');
+        $this->setPageTitle('Album Download');
         
         $albumId = !empty($_GET['albumId']) ? (int)$_GET['albumId'] : null;
         
