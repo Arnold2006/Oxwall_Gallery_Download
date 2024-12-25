@@ -5,6 +5,6 @@ $navigation->addMenuItem(
     OW_Navigation::MAIN,
     'albumdownload.index',
     'albumdownload',
-    'ALBUMDOWNLOAD',
+    OW::getLanguage()->text('albumdownload', 'menu_item'),
     OW_Navigation::VISIBLE_FOR_ALL
 );
