@@ -1,5 +1,3 @@
-<?php
-
 class ALBUMDOWNLOAD_CLASS_EventHandler
 {
     public function init()
