@@ -2,10 +2,11 @@
 
 try {
     $navigation = OW::getNavigation();
-    $navigation->deleteMenuItem('albumdownload.index');
+    $result = $navigation->deleteMenuItem('albumdownload.index');
+    OW::getLogger()->addEntry("Menu item 'albumdownload.index' delete result: " . json_encode($result));
     
     $languageService = BOL_LanguageService::getInstance();
     $languageService->deletePrefix('albumdownload');
 } catch (Exception $e) {
-    OW::getLogger()->addEntry(json_encode($e));
+    OW::getLogger()->addEntry("Uninstall error: " . json_encode($e));
 }
