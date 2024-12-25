@@ -1,3 +1,3 @@
 <?php
 
-OW::getRouter()->addRoute(new OW_Route('simpletest.index', 'simpletest', 'SIMPLETEST_CTRL_Index', 'index'));
+OW::getRouter()->addRoute(new OW_Route('albumdownload.index', 'albumdownload', 'ALBUMDOWNLOAD_CTRL_Index', 'index'));
